@@ -1,6 +1,6 @@
 {
     "name": "marcorieser/statamic-vitals",
-    "description": "Provide vitals of you Statamic installation for external usage.",
+    "description": "Provide vitals of your Statamic installation for external usage.",
     "keywords": [
         "statamic",
         "v3",
@@ -34,7 +34,7 @@
     "extra": {
         "statamic": {
             "name": "Statamic Vitals",
-            "description": "Provide vitals of you Statamic installation for external usage."
+            "description": "Provide vitals of your Statamic installation for external usage."
         },
         "laravel": {
             "providers": [

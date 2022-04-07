@@ -1,5 +1,5 @@
 # Statamic Vitals
-Provide vitals of you Statamic installation for external usage.
+Provide vitals of your Statamic installation for external usage.
 ```json
 {
 	"system": {
