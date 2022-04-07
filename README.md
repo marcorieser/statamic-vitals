@@ -1,5 +1,40 @@
 # Statamic Vitals
 Provide vitals of you Statamic installation for external usage.
+```json
+{
+	"system": {
+		"name": "System name",
+		"domain": "https:\/\/site.tld",
+		"environment": "production",
+		"laravel": "9.6.0",
+		"php": "8.1.4"
+	},
+	"statamic": {
+		"version": "3.3.4",
+		"latest_version": "3.3.5",
+		"pro": true,
+		"antlers_version": "runtime",
+		"update_available": true
+	},
+	"addons": [
+		{
+			"name": "Collaboration",
+			"package": "statamic\/collaboration",
+			"version": "0.4.0",
+			"latest_version": "0.4.0",
+			"update_available": false
+		},
+		{
+			"name": "Export",
+			"package": "youfront\/statamic-export",
+			"version": "1.0.1",
+			"latest_version": "1.0.3",
+			"update_available": true
+		}
+	],
+	"updates_available": 2
+}
+```
 
 ## How to Install
 
