@@ -1,0 +1,47 @@
+{
+    "name": "marcorieser/statamic-vitals",
+    "description": "Provide vitals of you Statamic installation for external usage.",
+    "keywords": [
+        "statamic",
+        "v3",
+        "addon",
+        "fathom"
+    ],
+    "license": "MIT",
+    "homepage": "https://github.com/marcorieser/statamic-vitals",
+    "authors": [
+        {
+            "name": "Marco Rieser",
+            "email": "marco@rieser.dev",
+            "homepage": "https://rieser.dev",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^8.0 || ^8.1",
+        "statamic/cms": "^3.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "MarcoRieser\\StatamicVitals\\": "src"
+        }
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "preferred-install": "dist",
+        "sort-packages": true
+    },
+    "extra": {
+        "statamic": {
+            "name": "Statamic Vitals",
+            "description": "Provide vitals of you Statamic installation for external usage."
+        },
+        "laravel": {
+            "providers": [
+                "MarcoRieser\\StatamicVitals\\ServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
