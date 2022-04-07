@@ -5,7 +5,7 @@
         "statamic",
         "v3",
         "addon",
-        "fathom"
+        "vitals"
     ],
     "license": "MIT",
     "homepage": "https://github.com/marcorieser/statamic-vitals",
