@@ -22,15 +22,13 @@ class VitalsController
             return new JsonResponse('Wrong access key.', '401');
         }
 
-        if ($this->shouldServeFromCache()) {
-            return new JsonResponse($this->vitals);
+        if (!$this->shouldServeFromCache()) {
+            $this->collectSystemVitals();
+            $this->collectStatamicVitals();
+            $this->collectAddonsVitals();
+            $this->collectAvailableUpdates();
+            $this->cacheVitals();
         }
-
-        $this->collectSystemVitals();
-        $this->collectStatamicVitals();
-        $this->collectAddonsVitals();
-        $this->collectAvailableUpdates();
-        $this->cacheVitals();
 
         return new JsonResponse($this->vitals);
     }
