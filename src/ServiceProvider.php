@@ -2,11 +2,15 @@
 
 namespace MarcoRieser\StatamicVitals;
 
+use MarcoRieser\StatamicVitals\Console\Commands\GenerateKey;
 use Statamic\Providers\AddonServiceProvider;
 use Statamic\Statamic;
 
 class ServiceProvider extends AddonServiceProvider
 {
+    protected $commands = [
+        GenerateKey::class
+    ];
 
     public function bootAddon(): void
     {

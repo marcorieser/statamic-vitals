@@ -45,11 +45,10 @@ composer require marcorieser/statamic-vitals
 ```
 
 ## Configuration
-Be sure to add the access key to your `.env` file which is used to authenticate external requests.
-```dotenv
-STATAMIC_VITALS_ACCESS_KEY="4Vz?xNc_eE&2uqQL"
+Be sure to generate an access key which is used to authenticate external requests.
+```bash
+php please vitals:generate-key
 ```
-
 
 ## How to Use
 Send a post request to the vitals endpoint `https://site.tld/api/statamic-vitals/vitals`.
