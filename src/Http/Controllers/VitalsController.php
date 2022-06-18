@@ -60,6 +60,7 @@ class VitalsController
             'environment' => config('app.env'),
             'laravel' => App::version(),
             'php' => PHP_VERSION,
+            'debug' => config('app.debug')
         ];
     }
 
@@ -70,7 +71,8 @@ class VitalsController
             'latest_version' => app(Marketplace::class)->statamic()->changelog()->latest()->version,
             'pro' => Statamic::pro(),
             'antlers_version' => config('statamic.antlers.version'),
-            'update_available' => app(UpdatesOverview::class)->hasStatamicUpdate(true)
+            'static_page_cache' => config('statamic.static_caching.strategy'),
+            'update_available' => app(UpdatesOverview::class)->hasStatamicUpdate(true),
         ];
     }
 
@@ -83,7 +85,7 @@ class VitalsController
                 'package' => $addon->package(),
                 'version' => $addon->version(),
                 'latest_version' => $addon->latestVersion(),
-                'update_available' => !$addon->isLatestVersion()
+                'update_available' => !$addon->isLatestVersion(),
             ];
         }
     }
