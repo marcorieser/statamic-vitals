@@ -7,13 +7,15 @@ Provide vitals of your Statamic installation for external usage.
 		"domain": "https:\/\/site.tld",
 		"environment": "production",
 		"laravel": "9.6.0",
-		"php": "8.1.4"
+		"php": "8.1.4",
+		"debug": false
 	},
 	"statamic": {
 		"version": "3.3.4",
 		"latest_version": "3.3.5",
 		"pro": true,
 		"antlers_version": "runtime",
+		"static_page_cache": "full",
 		"update_available": true
 	},
 	"addons": [
