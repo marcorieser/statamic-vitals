@@ -66,5 +66,5 @@ curl --request POST \
 ### Parameters
 | Parameter     | Description                                    | Default | Required |
 |---------------|------------------------------------------------|---------|:--------:|
-| `access_key`  | The access key you put in your `.env` file     | `''`    |    *     |
+| `access_key`  | The access key in your `.env` file     | `''`    |    *     |
 | `clear_cache` | Whether the vitals should be generated freshly | `false` |          |
