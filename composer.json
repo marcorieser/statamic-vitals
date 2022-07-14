@@ -33,7 +33,7 @@
     },
     "extra": {
         "statamic": {
-            "name": "Statamic Vitals",
+            "name": "Vitals",
             "description": "Provide vitals of your Statamic installation for external usage."
         },
         "laravel": {
