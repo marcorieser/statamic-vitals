@@ -23,7 +23,7 @@
     },
     "autoload": {
         "psr-4": {
-            "MarcoRieser\\StatamicVitals\\": "src"
+            "MarcoRieser\\Vitals\\": "src"
         }
     },
     "config": {
@@ -38,7 +38,7 @@
         },
         "laravel": {
             "providers": [
-                "MarcoRieser\\StatamicVitals\\ServiceProvider"
+                "MarcoRieser\\Vitals\\ServiceProvider"
             ]
         }
     },

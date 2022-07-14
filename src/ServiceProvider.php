@@ -1,8 +1,8 @@
 <?php
 
-namespace MarcoRieser\StatamicVitals;
+namespace MarcoRieser\Vitals;
 
-use MarcoRieser\StatamicVitals\Console\Commands\GenerateKey;
+use MarcoRieser\Vitals\Console\Commands\GenerateKey;
 use Statamic\Providers\AddonServiceProvider;
 use Statamic\Statamic;
 

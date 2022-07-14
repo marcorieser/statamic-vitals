@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use MarcoRieser\StatamicVitals\Http\Controllers\VitalsController;
+use MarcoRieser\Vitals\Http\Controllers\VitalsController;
 
 Route::prefix('api/statamic-vitals')->group(function () {
     // TODO[mr]: remove get route on release (07.04.22 mr)

@@ -1,6 +1,6 @@
 <?php
 
-namespace MarcoRieser\StatamicVitals\Console\Commands;
+namespace MarcoRieser\Vitals\Console\Commands;
 
 use Illuminate\Console\Command;
 use Illuminate\Console\ConfirmableTrait;

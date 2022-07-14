@@ -1,6 +1,6 @@
 <?php
 
-namespace MarcoRieser\StatamicVitals\Http\Controllers;
+namespace MarcoRieser\Vitals\Http\Controllers;
 
 use Carbon\Carbon;
 use Facades\Statamic\Marketplace\Marketplace;
