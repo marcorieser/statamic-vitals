@@ -72,6 +72,7 @@ class VitalsController
 
         $this->vitals['statamic'] = [
             'version' => Statamic::version(),
+            'cp_url' => Statamic::cpRoute('index'),
             'latest_version' => Marketplace::statamic()->changelog()->latest()->version,
             'pro' => Statamic::pro(),
             'antlers_version' => config('statamic.antlers.version'),
