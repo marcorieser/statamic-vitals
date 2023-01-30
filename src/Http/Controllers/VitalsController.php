@@ -19,7 +19,7 @@ class VitalsController
     public function __invoke()
     {
         if (!$this->checkAccess()) {
-            return new JsonResponse('Wrong access key.', '401');
+            return new JsonResponse(['error'=>'Wrong access key.'], '401');
         }
 
         if (!$this->shouldServeFromCache()) {
