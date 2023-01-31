@@ -19,7 +19,7 @@ class VitalsController
     public function __invoke()
     {
         if (!$this->checkAccess()) {
-            return new JsonResponse(['error'=>'Wrong access key.'], '401');
+            return new JsonResponse(['error' => 'Wrong access key.'], '401');
         }
 
         if (!$this->shouldServeFromCache()) {
@@ -92,6 +92,7 @@ class VitalsController
             $this->vitals['addons'][] = [
                 'name' => $addon->name(),
                 'package' => $addon->package(),
+                'marketplace_url' => $addon->marketplaceUrl(),
                 'version' => $addon->version(),
                 'latest_version' => $addon->changelog()?->latest()->version,
                 'update_available' => $updateAvailable,
