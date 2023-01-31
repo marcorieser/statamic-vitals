@@ -1,5 +1,7 @@
 # Statamic Vitals
-Provide vitals of your Statamic installation for external usage.
+> You can monitor your installations with this addon on [statamic-vitals.com](https://statamic-vitals.com).
+
+Provide vitals of your Statamic installation for external usage. 
 ```json
 {
 	"system": {
@@ -12,7 +14,8 @@ Provide vitals of your Statamic installation for external usage.
 	},
 	"statamic": {
 		"version": "3.3.4",
-		"latest_version": "3.3.5",
+		"cp_url": "https:\/\/site.tld\/cp",
+		"latest_version": "3.4.1",
 		"pro": true,
 		"antlers_version": "runtime",
 		"static_page_cache": "full",
