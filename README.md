@@ -1,5 +1,5 @@
-# Statamic Vitals
-> You can monitor your installations with this addon on [statamic-vitals.com](https://statamic-vitals.com).
+# Vitals for Statamic
+> You can monitor your installations with this addon on [vitals-for-statamic.com](https://vitals-for-statamic.com).
 
 Provide vitals of your Statamic installation for external usage. 
 ```json
